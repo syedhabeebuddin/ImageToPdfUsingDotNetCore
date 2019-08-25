@@ -10,32 +10,32 @@ namespace ImageToPdfTest
     [TestClass]
     public class ITextSharpImageToPdfConverterTest
     {
-        [TestMethod]
-        public void ConvertToPdf_EmptyPaths_ThrowException()
-        {
-            ImageToPdf.Classes.
-            ITextSharpImageToPdfConverter converter = new ITextSharpImageToPdfConverter();
+        //[TestMethod]
+        //public void ConvertToPdf_EmptyPaths_ThrowException()
+        //{
+        //    ImageToPdf.Classes.
+        //    ITextSharpImageToPdfConverter converter = new ITextSharpImageToPdfConverter();
 
-            Assert.ThrowsException<ArgumentNullException>(() => converter.ConvertToPdf("", ""));
-        }
+        //    Assert.ThrowsException<ArgumentNullException>(() => converter.ConvertToPdf("", ""));
+        //}
 
-        [TestMethod]
-        public void ConvertToPdf_WrongFileType_ThrowException()
-        {
-            ImageToPdf.Classes.
-            ITextSharpImageToPdfConverter converter = new ITextSharpImageToPdfConverter();
+        //[TestMethod]
+        //public void ConvertToPdf_WrongFileType_ThrowException()
+        //{
+        //    ImageToPdf.Classes.
+        //    ITextSharpImageToPdfConverter converter = new ITextSharpImageToPdfConverter();
 
-            Assert.ThrowsException<InvalidDataException>(() => converter.ConvertToPdf("Test.txt", "Test.pdf"));
-        }
+        //    Assert.ThrowsException<InvalidDataException>(() => converter.ConvertToPdf("Test.txt", "Test.pdf"));
+        //}
 
-        [TestMethod]
-        public void ConvertToPdf_Success()
-        {
-            ImageToPdf.Classes.
-            ITextSharpImageToPdfConverter converter = new ITextSharpImageToPdfConverter();
-            converter.ConvertToPdf("Android_Error.png", "Error1.pdf");
+        //[TestMethod]
+        //public void ConvertToPdf_Success()
+        //{
+        //    ImageToPdf.Classes.
+        //    ITextSharpImageToPdfConverter converter = new ITextSharpImageToPdfConverter();
+        //    converter.ConvertToPdf("Android_Error.png", "Error1.pdf");
 
-            Assert.IsTrue(File.Exists("Error1.pdf"));
-        }
+        //    Assert.IsTrue(File.Exists("Error1.pdf"));
+        //}
     }
 }

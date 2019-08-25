@@ -28,14 +28,14 @@ namespace ImageToPdfTest
             Assert.ThrowsException<InvalidDataException>(() => converter.ConvertToPdf("Test.txt", "Test.pdf"));
         }
 
-        [TestMethod]
-        public void ConvertToPdf_Success()
-        {
-            ImageToPdf.Classes.
-            PdfSharpCoreImageToPdfConverter converter = new PdfSharpCoreImageToPdfConverter();
-            converter.ConvertToPdf("Android_Error.png", "Error1.pdf");
+        //[TestMethod]
+        //public void ConvertToPdf_Success()
+        //{
+        //    ImageToPdf.Classes.
+        //    PdfSharpCoreImageToPdfConverter converter = new PdfSharpCoreImageToPdfConverter();
+        //    converter.ConvertToPdf("Android_Error.png", "Error1.pdf");
 
-            Assert.IsTrue(File.Exists("Error1.pdf"));           
-        }
+        //    Assert.IsTrue(File.Exists("Error1.pdf"));           
+        //}
     }
 }
